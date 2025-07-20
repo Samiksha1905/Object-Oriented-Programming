@@ -18,6 +18,12 @@ class Student{
         this->level=level;
         this->health=health;
     }
+ //copy constructor
+    Student(Student& temp){
+        cout<<"Copy constructor called"<<endl;
+        this->health=temp.health;
+        this->level=temp.level;
+    }
     void print(){
         cout<<"Health: "<<this->health<<endl;
         cout<<"level: "<<this->level<<endl;
